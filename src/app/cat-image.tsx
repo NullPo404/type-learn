@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState } from "react";
@@ -21,12 +19,12 @@ export function CatImage({ url }: CatImageProps) {
 
     return (
         <div className={styles.page}>
-            <button onClick={refreshImage} className={styles.button}>
-                他の猫も見る👀
-            </button>
-            <div className={styles.frame}>
-                {ImageUrl && <img src={ImageUrl} className={styles.img} />}
-            </div>
+        <button onClick={refreshImage} className={styles.button}>
+            他の猫も見る👀
+        </button>
+        <div className={styles.frame}>
+            {ImageUrl && <img src={ImageUrl} className={styles.img} />}
         </div>
+    </div>
     )
 }
